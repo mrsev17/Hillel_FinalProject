@@ -82,6 +82,17 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 19px !important;
+  font-weight: normal !important;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
@@ -96,9 +107,44 @@ select {
   font-style: normal;
   font-display: swap;
 }
-h1 {
-  color: brown;
-  font-size: 30px;
+.header__top {
+  font-size: 16px;
+  background-color: pink;
+}
+.header__top-content > div:not(:last-child) {
+  margin-right: 6px;
+}
+.header__top-content > div:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+.header__top-lang input[name=lang] {
+  display: none;
+}
+.header__top-lang input[name=lang]:checked + span {
+  background-color: #F0145A;
+}
+.header__top-lang label span {
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.header__top-address a, .header__top-phone a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header__top-phone a {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=homepage.css.map */

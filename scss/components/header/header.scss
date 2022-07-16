@@ -1,0 +1,51 @@
+.header {
+  &__top {
+    font-size: $font-sm;
+    background-color: pink;
+
+    &-content > div:not(:last-child) {
+      margin-right: 6px;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: $white-color;
+        border-radius: 50%;
+        margin-left: 3px;
+      }
+    }
+
+    &-lang {
+      input[name="lang"] {
+        display: none;
+      }
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+      }
+      label span {
+        cursor: pointer;
+        font-weight: $font-bold;
+        color: $white-color;
+        padding: 5px 7px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+    }
+
+    &-address,
+    &-phone {
+      a {
+        color: $white-color;
+        font-size: $font-sm;
+        font-weight: $font-normal;
+        text-decoration: none;
+      }
+    }
+
+    &-phone a {
+      font-weight: $font-bold;
+    }
+
+  }
+}
