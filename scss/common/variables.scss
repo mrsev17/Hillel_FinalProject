@@ -6,3 +6,18 @@ $font-bold: 700;
 
 $white-color: #fff;
 $accent-color: #F0145A;
+
+
+
+
+
+.nav-link {
+  color: $white-color !important;
+  border-bottom: 1px solid transparent;
+  font-weight: $font-bold;
+  &:hover {
+    color: $accent-color !important;
+    border-bottom: 1px solid $accent-color;
+    transition: .5s;
+  }
+}

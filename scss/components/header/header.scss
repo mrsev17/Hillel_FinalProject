@@ -1,10 +1,29 @@
 .header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 1;
+
+  &-content-wrapper {
+    position: relative;
+  }
   &__top {
     font-size: $font-sm;
-    background-color: pink;
+
+    .container {
+      position: relative;
+    }
+
+    &-content {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: -16px;
+    }
 
     &-content > div:not(:last-child) {
       margin-right: 6px;
+
       &:after {
         content: "";
         display: inline-block;
@@ -48,4 +67,22 @@
     }
 
   }
+
+  .navbar {
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+
+  .nav-link {
+    padding: 0 !important;
+    margin: 0 !important;
+    &.active {
+      color: $accent-color;
+    }
+  }
+
 }

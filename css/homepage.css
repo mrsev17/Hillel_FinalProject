@@ -82,10 +82,48 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+.nav-link {
+  color: #fff !important;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #F0145A !important;
+  border-bottom: 1px solid #F0145A;
+  transition: 0.5s;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 19px !important;
   font-weight: normal !important;
+}
+
+.linked {
+  color: #fff;
+}
+.linked:hover {
+  color: #F0145A;
+  transition: 0.5s;
+}
+
+.bgn-gradient {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.active-btn {
+  color: #F0145A !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #F0145A !important;
+  border-bottom: 1px solid #F0145A;
+  transition: 0.5s;
 }
 
 @media (min-width: 1600px) {
@@ -107,9 +145,26 @@ body {
   font-style: normal;
   font-display: swap;
 }
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 1;
+}
+.header-content-wrapper {
+  position: relative;
+}
 .header__top {
   font-size: 16px;
-  background-color: pink;
+}
+.header__top .container {
+  position: relative;
+}
+.header__top-content {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: -16px;
 }
 .header__top-content > div:not(:last-child) {
   margin-right: 6px;
@@ -145,6 +200,42 @@ body {
 }
 .header__top-phone a {
   font-weight: 700;
+}
+.header .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.header .nav-link {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.header .nav-link.active {
+  color: #F0145A;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/icons/banner-symbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+}
+.banner h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 38px;
+}
+.banner__scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=homepage.css.map */
