@@ -1,16 +1,18 @@
+
 .header {
   position: absolute;
-  width: 100%;
   padding-top: 50px;
+  width: 100%;
   z-index: 1;
 
   &-content-wrapper {
     position: relative;
   }
+
   &__top {
     font-size: $font-sm;
 
-    .container {
+    .container-lg {
       position: relative;
     }
 
@@ -19,29 +21,32 @@
       z-index: 1;
       right: 0;
       top: -16px;
-    }
 
-    &-content > div:not(:last-child) {
-      margin-right: 6px;
+      & > div:not(:last-child) {
+        margin-right: 6px;
 
-      &:after {
-        content: "";
-        display: inline-block;
-        width: 7px;
-        height: 7px;
-        background-color: $white-color;
-        border-radius: 50%;
-        margin-left: 3px;
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: $white-color;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
       }
     }
 
     &-lang {
+
       input[name="lang"] {
         display: none;
       }
+
       input[name="lang"]:checked + span {
         background-color: $accent-color;
       }
+
       label span {
         cursor: pointer;
         font-weight: $font-bold;
@@ -50,6 +55,7 @@
         border-radius: 8px;
         display: inline-block;
       }
+
     }
 
     &-address,
@@ -69,20 +75,28 @@
   }
 
   .navbar {
+
+    &-brand {
+      margin-top: -20px;
+    }
+
     &-nav {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       gap: 15px;
+      padding-top: 20px;
+    }
+
+
+    .nav-link {
+      font-weight: $font-bold;
+      padding-bottom: 3px;
+
+      &.active {
+        border-bottom: 2px solid;
+      }
+
     }
   }
-
-  .nav-link {
-    padding: 0 !important;
-    margin: 0 !important;
-    &.active {
-      color: $accent-color;
-    }
-  }
-
 }

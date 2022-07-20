@@ -5,7 +5,13 @@ body {
   font-size: $font-md !important;
   font-weight: normal !important;
 }
-
+a {
+  color: #B3B3BA !important;
+  &:hover {
+    color: $accent-color !important;
+    transition: .5s;
+  }
+}
 .linked {
   color: $white-color;
   &:hover {

@@ -15,6 +15,7 @@ $accent-color: #F0145A;
   color: $white-color !important;
   border-bottom: 1px solid transparent;
   font-weight: $font-bold;
+  font-size: 16px;
   &:hover {
     color: $accent-color !important;
     border-bottom: 1px solid $accent-color;
