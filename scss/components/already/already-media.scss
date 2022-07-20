@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+  .already {
+    .container-lg {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
+    }
+    &__wrapper {
+      width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .already {
+    .container-lg {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
+    }
+    &__wrapper {
+      width: 100vw;
+    }
+    figure {
+      margin: 0;
+      width: calc(100%/3);
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .already {
+    &__wrapper {
+      flex-direction: column;
+    }
+    figure {
+      width: 100%;
+    }
+  }
+}

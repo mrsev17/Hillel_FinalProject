@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .team {
+    &__item-wrapper {
+      flex-direction: column;
+      figure img {
+        width: 100%;
+        max-width: none;
+        border-radius: 24px;
+      }
+    }
+  }
+}

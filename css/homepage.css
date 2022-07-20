@@ -635,7 +635,7 @@ a:hover {
 }
 .team figure img {
   max-width: 400px;
-  max-height: 298px;
+  height: 100%;
 }
 .team__item-wrapper {
   background-color: #EDEDF7;
@@ -678,6 +678,16 @@ a:hover {
   color: #B3B3BA;
 }
 
+@media (max-width: 768px) {
+  .team__item-wrapper {
+    flex-direction: column;
+  }
+  .team__item-wrapper figure img {
+    width: 100%;
+    max-width: none;
+    border-radius: 24px;
+  }
+}
 .already {
   margin-top: 60px;
 }
@@ -698,6 +708,39 @@ a:hover {
 .already figure {
   width: 25%;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .already .container-lg {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+  .already__wrapper {
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .already .container-lg {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+  .already__wrapper {
+    width: 100vw;
+  }
+  .already figure {
+    margin: 0;
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 380px) {
+  .already__wrapper {
+    flex-direction: column;
+  }
+  .already figure {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
