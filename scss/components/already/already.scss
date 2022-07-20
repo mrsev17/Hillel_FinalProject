@@ -1,0 +1,21 @@
+.already {
+  margin-top: 60px;
+  &__title {
+    margin-top: 100px;
+    h6 {
+      text-align: center;
+      color: #323264;
+      font-size: 14px;
+      font-weight: $font-bold;
+    }
+  }
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  figure {
+    width: calc(100%/4);
+    margin: 0 auto;
+  }
+}

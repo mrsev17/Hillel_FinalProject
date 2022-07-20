@@ -136,6 +136,7 @@ a:hover {
 
    */
   border-radius: 0 0 12px 12px;
+  padding-bottom: 40px;
 }
 
 .bgn-add-one {
@@ -675,6 +676,28 @@ a:hover {
   font-size: 14px;
   font-weight: 700;
   color: #B3B3BA;
+}
+
+.already {
+  margin-top: 60px;
+}
+.already__title {
+  margin-top: 100px;
+}
+.already__title h6 {
+  text-align: center;
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+}
+.already__wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.already figure {
+  width: 25%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=homepage.css.map */
