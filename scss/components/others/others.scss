@@ -32,10 +32,12 @@
         max-width: 494px;
       }
   }
-  &__lower-line,
   &__upper-line {
     margin-top: 60px;
     gap: 60px;
+    flex-wrap: wrap;
   }
-
+  &__item {
+    width: 29%;
+  }
 }

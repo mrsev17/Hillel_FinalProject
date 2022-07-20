@@ -499,9 +499,66 @@ a:hover {
   color: #fff;
   max-width: 494px;
 }
-.others__lower-line, .others__upper-line {
+.others__upper-line {
   margin-top: 60px;
   gap: 60px;
+  flex-wrap: wrap;
+}
+.others__item {
+  width: 29%;
+}
+
+@media (max-width: 944px) {
+  .others__upper-line {
+    gap: 40px;
+  }
+  .others__item {
+    width: 28%;
+  }
+}
+@media (max-width: 768px) {
+  .others {
+    padding: 0 30px;
+  }
+  .others__upper-line {
+    gap: 40px;
+  }
+  .others__item {
+    width: 46%;
+  }
+}
+@media (max-width: 583px) {
+  .others {
+    padding: 0 30px;
+  }
+  .others__upper-line {
+    gap: 20px;
+  }
+  .others__item {
+    width: 45%;
+  }
+}
+@media (max-width: 526px) {
+  .others {
+    padding: 0 30px;
+  }
+  .others__upper-line {
+    gap: 20px;
+  }
+  .others__item {
+    width: 45%;
+  }
+}
+@media (max-width: 418px) {
+  .others {
+    padding: 0 30px;
+  }
+  .others__upper-line {
+    gap: 20px;
+  }
+  .others__item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
