@@ -118,10 +118,65 @@ a:hover {
 
 .bgn-gradient {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  /*
+  border-radius: 0 0 12px 12px;
+  box-shadow:
+
+          0 1px 1px rgba(0,0,0,0.15),
+
+          0 10px 0 -5px #CACADB,
+
+          0 10px 1px -4px rgba(0,0,0,0.15),
+
+          0 20px 0 -10px #E7E7F2,
+
+          0 20px 1px -9px rgba(0,0,0,0.15);
+
+  padding: 30px;
+
+   */
+  border-radius: 0 0 12px 12px;
+}
+
+.bgn-add-one {
+  border-radius: 0 0 12px 12px;
+  background-color: #CACADB;
+  width: 100%;
+  height: 10px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-shadow-one {
+  padding: 0 10px;
+}
+
+.bgn-add-two {
+  border-radius: 0 0 12px 12px;
+  background-color: #E7E7F2;
+  width: 100%;
+  height: 10px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-shadow-two {
+  padding: 0 20px;
 }
 
 .active-btn {
   color: #F0145A !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50% !important;
+  width: 14px !important;
+  height: 14px !important;
+  background-color: #24A3FF !important;
+}
+
+.carousel-indicators {
+  bottom: -71px !important;
 }
 
 .nav-link {
@@ -559,6 +614,67 @@ a:hover {
   .others__item {
     width: 100%;
   }
+}
+.team {
+  margin-top: 70px;
+  /*
+  &__link-wrap,
+  &__title-case,
+  &__member {
+    margin-left: 30px;
+  }
+
+   */
+}
+.team .container-option {
+  padding: 0 30px;
+}
+.team figure {
+  margin: 0;
+}
+.team figure img {
+  max-width: 400px;
+  max-height: 298px;
+}
+.team__item-wrapper {
+  background-color: #EDEDF7;
+  border-radius: 12px;
+}
+.team__link-wrap {
+  margin-top: 30px;
+}
+.team__link-wrap a {
+  font-size: 14px;
+  color: #24A3FF !important;
+}
+.team__link-wrap svg {
+  margin-top: -3px;
+}
+.team__title-case {
+  margin-top: 10px;
+}
+.team__title-case h3 {
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 28px;
+}
+.team__member {
+  margin-top: 40px;
+}
+.team__member h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #B3B3BA;
+}
+.team__member p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #B3B3BA;
 }
 
 /*# sourceMappingURL=homepage.css.map */
