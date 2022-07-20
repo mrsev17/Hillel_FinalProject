@@ -468,5 +468,40 @@ a:hover {
     text-align: center;
   }
 }
+.others {
+  margin-top: 70px;
+}
+.others__control-panel a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.others__control-panel a span svg {
+  margin-top: -2px;
+}
+.others__title {
+  margin-top: 10px;
+}
+.others__title h3 {
+  color: #F0145A;
+  font-weight: 700;
+}
+.others__item-title {
+  margin-top: 30px;
+}
+.others__item-title h5 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #24A3FF;
+}
+.others__item-text p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #fff;
+  max-width: 494px;
+}
+.others__lower-line, .others__upper-line {
+  margin-top: 60px;
+  gap: 60px;
+}
 
 /*# sourceMappingURL=homepage.css.map */
