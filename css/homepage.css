@@ -528,7 +528,7 @@ a:hover {
   margin-top: 70px;
 }
 .others__control-panel a {
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 700;
 }
 .others__control-panel a span svg {
@@ -653,7 +653,6 @@ a:hover {
   color: #F0145A !important;
 }
 .team__link-wrap a:hover span svg {
-  stroke: #F0145A;
   fill: #F0145A;
   transition: 0.5s;
 }
@@ -791,6 +790,52 @@ a:hover {
   stroke: #F0145A;
   fill: #F0145A;
   transition: 0.5s;
+}
+.something__title {
+  margin-top: 10px;
+}
+.something__title h3 {
+  font-size: 38px;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #F0145A 1%, #EF8080 99%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.something__cards-wrapper {
+  margin-top: 30px;
+  gap: 30px;
+}
+.something__card {
+  width: 33.3333333333%;
+}
+.something .card {
+  border-radius: 10px;
+}
+.something .card-text {
+  font-size: 14px;
+}
+.something__card-title {
+  padding: 0 30px;
+  margin-top: 30px;
+}
+.something__card-title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #24A3FF;
+}
+.something__card-date {
+  margin-top: 15px;
+  padding: 0 30px;
+}
+.something__card-date p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #B3B3BA;
+  padding: 0 0 15px;
+  border-bottom: 2px solid #B3B3BA;
 }
 
 /*# sourceMappingURL=homepage.css.map */
