@@ -645,8 +645,17 @@ a:hover {
   margin-top: 30px;
 }
 .team__link-wrap a {
-  font-size: 14px;
+  font-size: 19px;
   color: #24A3FF !important;
+  font-weight: 700;
+}
+.team__link-wrap a:hover {
+  color: #F0145A !important;
+}
+.team__link-wrap a:hover span svg {
+  stroke: #F0145A;
+  fill: #F0145A;
+  transition: 0.5s;
 }
 .team__link-wrap svg {
   margin-top: -3px;
@@ -693,6 +702,9 @@ a:hover {
 }
 .already__title {
   margin-top: 100px;
+  /*
+  width: 100vw;
+  */
 }
 .already__title h6 {
   text-align: center;
@@ -725,6 +737,9 @@ a:hover {
   }
 }
 @media (max-width: 1440px) {
+  .already__title {
+    width: 100vw;
+  }
   .already .container-lg {
     padding: 0 !important;
     margin: 0 !important;
@@ -755,6 +770,27 @@ a:hover {
   .already figure {
     width: 100%;
   }
+}
+.something {
+  margin: 34px 0;
+  padding: 100px 0;
+}
+.something__link a {
+  color: #24A3FF !important;
+  font-size: 19px;
+  font-weight: 700;
+}
+.something__link a span svg {
+  margin-top: -4px;
+  margin-left: -4px;
+}
+.something__link a:hover {
+  color: #F0145A !important;
+}
+.something__link a:hover span svg {
+  stroke: #F0145A;
+  fill: #F0145A;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=homepage.css.map */

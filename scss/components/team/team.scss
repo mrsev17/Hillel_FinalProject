@@ -26,8 +26,17 @@
   &__link-wrap {
     margin-top: 30px;
     a {
-      font-size: 14px;
+      font-size: $font-md;
       color: #24A3FF !important;
+      font-weight: $font-bold;
+      &:hover {
+        color: $accent-color !important;
+        span svg {
+          stroke: $accent-color;
+          fill: $accent-color;
+          transition: .5s;
+        }
+      }
     }
     svg {
       margin-top: -3px;

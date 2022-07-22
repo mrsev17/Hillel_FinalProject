@@ -1,0 +1,23 @@
+.something {
+  margin: 34px 0;
+  padding: 100px 0;
+  &__link {
+    a {
+      color: #24A3FF !important;
+      font-size: $font-md;
+      font-weight: $font-bold;
+      span svg {
+        margin-top: -4px;
+        margin-left: -4px;
+      }
+      &:hover {
+        color: $accent-color !important;
+        span svg {
+          stroke: $accent-color;
+          fill: $accent-color;
+          transition: .5s;
+        }
+      }
+    }
+  }
+}
