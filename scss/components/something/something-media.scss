@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .something {
+    .container-lg {
+      padding: 0 60px;
+    }
+    &__cards-wrapper {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+    &__card-one,
+    &__card-two {
+      width: 47.5%;
+    }
+    &__card-three {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 719px) {
+  .something {
+    &__card-one,
+    &__card-two {
+      width: 46%;
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  .something {
+    .container-lg {
+      padding: 0 30px;
+    }
+    &__card-one,
+    &__card-two {
+      width: 100%;
+    }
+  }
+}

@@ -180,6 +180,10 @@ a:hover {
   bottom: -71px !important;
 }
 
+.bg-color-down {
+  background-color: #F5F5FA;
+}
+
 .nav-link {
   color: #fff !important;
   border-bottom: 1px solid transparent;
@@ -687,6 +691,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .team .container-lg {
+    padding: 0 60px;
+  }
   .team__item-wrapper {
     flex-direction: column;
   }
@@ -694,6 +701,11 @@ a:hover {
     width: 100%;
     max-width: none;
     border-radius: 24px;
+  }
+}
+@media (max-width: 582px) {
+  .team .container-lg {
+    padding: 0 30px;
   }
 }
 .already {
@@ -771,10 +783,13 @@ a:hover {
   }
 }
 .something {
-  margin: 34px 0;
-  padding: 100px 0;
+  margin: 60px 0 0;
+}
+.something__link {
+  margin-top: 30px;
 }
 .something__link a {
+  margin-top: 30px;
   color: #24A3FF !important;
   font-size: 19px;
   font-weight: 700;
@@ -808,14 +823,25 @@ a:hover {
   margin-top: 30px;
   gap: 30px;
 }
-.something__card {
+.something__card-one, .something__card-two, .something__card-three {
   width: 33.3333333333%;
 }
 .something .card {
   border-radius: 10px;
+  border: none;
+  height: 100%;
+  max-height: 530px;
+  transition: box-shadow 1s ease-out 0.9s;
+}
+.something .card:hover {
+  box-shadow: 9px 10px 18px 2px rgba(0, 0, 0, 0.73);
+  transition: 1s;
 }
 .something .card-text {
   font-size: 14px;
+}
+.something .card-body {
+  padding: 0 30px 40px;
 }
 .something__card-title {
   padding: 0 30px;
@@ -836,6 +862,35 @@ a:hover {
   color: #B3B3BA;
   padding: 0 0 15px;
   border-bottom: 2px solid #B3B3BA;
+}
+
+@media (max-width: 768px) {
+  .something .container-lg {
+    padding: 0 60px;
+  }
+  .something__cards-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .something__card-one, .something__card-two {
+    width: 47.5%;
+  }
+  .something__card-three {
+    width: 100%;
+  }
+}
+@media (max-width: 719px) {
+  .something__card-one, .something__card-two {
+    width: 46%;
+  }
+}
+@media (max-width: 582px) {
+  .something .container-lg {
+    padding: 0 30px;
+  }
+  .something__card-one, .something__card-two {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */

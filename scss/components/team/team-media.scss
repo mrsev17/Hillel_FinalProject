@@ -1,5 +1,8 @@
 @media (max-width: 768px) {
   .team {
+    .container-lg {
+      padding: 0 60px;
+    }
     &__item-wrapper {
       flex-direction: column;
       figure img {
@@ -7,6 +10,14 @@
         max-width: none;
         border-radius: 24px;
       }
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  .team {
+    .container-lg {
+      padding: 0 30px;
     }
   }
 }
