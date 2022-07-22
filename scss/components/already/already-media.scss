@@ -1,4 +1,21 @@
-@media (max-width: 1024px) {
+@media (min-width: 1440px) {
+  .already {
+    &__picture-one {
+      border-radius: 12px 0 0 0;
+    }
+    &__picture-two {
+      border-radius: 0 12px 0 0;
+    }
+    &__picture-three {
+      border-radius: 0 0 0 12px;
+    }
+    &__picture-four {
+      border-radius: 0 0 12px 0;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
   .already {
     .container-lg {
       padding: 0 !important;
@@ -10,7 +27,6 @@
     }
   }
 }
-
 @media (max-width: 768px) {
   .already {
     .container-lg {

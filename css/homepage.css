@@ -710,7 +710,21 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1440px) {
+  .already__picture-one {
+    border-radius: 12px 0 0 0;
+  }
+  .already__picture-two {
+    border-radius: 0 12px 0 0;
+  }
+  .already__picture-three {
+    border-radius: 0 0 0 12px;
+  }
+  .already__picture-four {
+    border-radius: 0 0 12px 0;
+  }
+}
+@media (max-width: 1440px) {
   .already .container-lg {
     padding: 0 !important;
     margin: 0 !important;
