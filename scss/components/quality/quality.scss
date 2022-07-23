@@ -1,0 +1,33 @@
+.quality {
+  margin-top: 60px;
+  &__wrapper-content {
+    margin-top: 60px;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
+  &__text-case {
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title-case {
+    margin-left: 30px;
+    h2 {
+      max-width: 362px;
+      font-size: 36px;
+      font-weight: $font-bold;
+      background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      background-size: 100%;
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+  }
+  &__text-case {
+    p {
+      font-size: $font-md;
+      max-width: 662px;
+    }
+  }
+}
