@@ -1,0 +1,113 @@
+
+.header {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+  z-index: 1;
+
+  &-content-wrapper {
+    position: relative;
+  }
+
+  &__top {
+    font-size: $font-sm;
+
+    .container-lg {
+      position: relative;
+    }
+
+    &-content {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: -16px;
+
+      & > div:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: $white-color;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
+      }
+    }
+    &__top-social {
+      svg {
+        &:hover {
+          fill: $accent-color;
+        }
+      }
+    }
+    &-lang {
+
+      input[name="lang"] {
+        display: none;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+      }
+
+      label span {
+        cursor: pointer;
+        font-weight: $font-bold;
+        color: #B3B3BA;
+        padding: 5px 7px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+    }
+
+    &-address,
+    &-phone {
+      a {
+        color: $white-color;
+        font-size: $font-sm;
+        font-weight: $font-normal;
+        text-decoration: none;
+      }
+    }
+
+    &-phone a {
+      font-weight: $font-bold;
+    }
+
+  }
+
+  .navbar {
+
+    &-brand {
+      margin-top: -20px;
+    }
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 20px;
+    }
+
+
+    .nav-link {
+      font-weight: $font-bold;
+      padding-bottom: 3px;
+      color: #24A3FF !important;
+      &:hover {
+        color: $accent-color !important;
+        transition: .5s;
+      }
+
+      &.active {
+        border-bottom: 2px solid;
+      }
+
+    }
+  }
+}
