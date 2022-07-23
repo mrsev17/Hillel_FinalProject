@@ -51,6 +51,7 @@
 
       input[name="lang"]:checked + span {
         background-color: $accent-color;
+        color: $white-color;
       }
 
       label span {
