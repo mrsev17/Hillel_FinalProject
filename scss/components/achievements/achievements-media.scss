@@ -1,0 +1,16 @@
+@media (max-width: 724px) {
+  .achievements {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements {
+  .container-fluid {
+    padding: 0 30px;
+  }
+  }
+}
